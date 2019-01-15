@@ -5,7 +5,7 @@
 	    }
 	    stage ('produce') {
 	        // Notify DevOptics that this run produced plugin-a.txt.
-	        gateConsumesArtifact type: “docker”, id: “789”
+	        gateConsumesArtifact file: 'plugin-1000.txt'
 	          sh 'sleep 45'
 	    }      
 	}

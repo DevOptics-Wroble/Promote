@@ -1,11 +1,11 @@
-// Jenkinsfile scripted pipeline - 1/11/19 a
+// Jenkinsfile scripted pipeline
 	node {
 	    stage ('checkout') {
 	        checkout scm
 	    }
 	    stage ('produce') {
 	        // Notify DevOptics that this run produced plugin-a.txt.
-	        gateConsumesArtifact file: 'plugin-1001.txt'
-	          sh 'sleep 45'
+	        gateConsumesArtifact file: 'plugin-0130.txt'
+	          sh 'sleep 30'
 	    }      
 	}
